@@ -131,6 +131,7 @@ body {
 .main-header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -187,12 +188,11 @@ body {
 .hero {
     padding-top: 188px;
     padding-bottom: 188px;
-
+    max-width: 1440px;
     background-color: var(--primary-color-theme-light);
     text-align: center;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/people-office.jpg');
     background-size: cover;
-    
 }
 
 
@@ -253,6 +253,12 @@ body {
 .employees {
     background-color: var(--element-color-theme-dark);
     text-align: center;
+}
+
+.employees-list {
+    background: var(--primary-color-theme-dark);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .employees-card-wrapper {
@@ -396,11 +402,21 @@ color: var(--primary-color-theme-dark);
     padding-bottom: 32px;
     padding-left: 16px;
 
-    border-right: 1px solid var(--secondary-color-theme-dark);
-    border-bottom: 1px solid var(--secondary-color-theme-dark);
-    border-left: 1px solid var(--secondary-color-theme-dark);
+    border: 1px solid var(--secondary-color-theme-dark);
+    border-top: transparent;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
+.portfolio-card-wrapper {
+    display: block;
+}
+
+.portfolio-card-wrapper:hover .portfolio-text-wrapper,
+.portfolio-card-wrapper:focus .portfolio-text-wrapper {
+    border: 0.5px solid var(--element-color-theme-dark);
+    border-top: transparent;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+} 
 
 .portfolio-btn {
     padding: 12px 24px;
@@ -420,11 +436,8 @@ color: var(--primary-color-theme-dark);
 .portfolio-btn:focus {
     color: var(--primary-color-theme-dark);
     background-color: var(--accent-color);
-}
-
-.portfolio-card-wrapper:hover {
-    border: 0.5px solid var(--element-color-theme-dark);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*================= /PORTFOLIO =================*/
